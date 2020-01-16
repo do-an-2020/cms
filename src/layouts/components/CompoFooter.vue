@@ -1,7 +1,6 @@
 <template>
   <!-- FOOTER -->
   <div id="footer">
-    <a href="">Hello</a>
     <p>&copy; binarytheme &nbsp;2020 &nbsp;</p>
   </div>
   <!--END FOOTER -->
