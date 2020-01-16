@@ -16,7 +16,7 @@
       <!-- LOGO SECTION -->
       <header class="navbar-header">
         <a href="index.html" class="navbar-brand">
-          <img src="assets/img/logo.png" alt />
+          <img src="../../../src/assets/img/logo.png" alt />
         </a>
       </header>
       <!-- END LOGO SECTION -->

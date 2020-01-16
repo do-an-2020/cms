@@ -6,7 +6,7 @@
         <img
           class="media-object img-thumbnail user-img"
           alt="User Picture"
-          src="assets/img/user.gif"
+          src="../../../src/assets/img/user.gif"
         />
       </a>
       <br />

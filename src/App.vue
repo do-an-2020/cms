@@ -1,11 +1,26 @@
 <template>
   <div id="app">
+   
     <compo-header></compo-header>
     <compo-menu></compo-menu>
     <compo-content></compo-content>
     <compo-footer></compo-footer>
   </div>
 </template>
+
+<script language="javascript" type="text/javascript" src='./assets/plugins/jquery-2.0.3.min.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/plugins/bootstrap/js/bootstrap.min.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/js/for_index.js'></script>
+
+<script language="javascript" type="text/javascript" src='./assets/plugins/jquery-2.0.3.min.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/plugins/bootstrap/js/bootstrap.min.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js'></script>
+
+<script language="javascript" type="text/javascript" src='./assets/plugins/flot/jquery.flot.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/plugins/flot/jquery.flot.resize.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/plugins/flot/jquery.flot.time.js'></script>
+<script language="javascript" type="text/javascript" src='./assets/plugins/flot/jquery.flot.stack.js'></script>
 
 <script>
 
