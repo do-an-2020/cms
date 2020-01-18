@@ -39,6 +39,16 @@
                         title: 'Main Navigation',
                     },
                     {
+                        title: 'Customer',
+                        icon: '',
+                        href: '/customer'
+                    },
+                    {
+                        title: 'Order Sale',
+                        icon: '',
+                        href: '/order'
+                    },
+                    {
                         title: 'Dashboards',
                         icon: 'pe-7s-rocket',
                         child: [
