@@ -22,19 +22,19 @@ export default new Router({
         {
             path: '/pages/login-boxed',
             name: 'login-boxed',
-            meta: {layout: 'userpages'},
+            meta: { layout: 'userpages' },
             component: () => import('../DemoPages/UserPages/LoginBoxed.vue'),
         },
         {
             path: '/pages/register-boxed',
             name: 'register-boxed',
-            meta: {layout: 'userpages'},
+            meta: { layout: 'userpages' },
             component: () => import('../DemoPages/UserPages/RegisterBoxed.vue'),
         },
         {
             path: '/pages/forgot-password-boxed',
             name: 'forgot-password-boxed',
-            meta: {layout: 'userpages'},
+            meta: { layout: 'userpages' },
             component: () => import('../DemoPages/UserPages/ForgotPasswordBoxed.vue'),
         },
 
@@ -159,5 +159,18 @@ export default new Router({
             name: 'chartjs',
             component: () => import('../DemoPages/Charts/Chartjs.vue'),
         },
-    ]
+        {
+            path: '/customer',
+            name: 'Customer',
+            component: () =>
+                import(/* webpackTrunkName: "Customer" */'../views/customer/CustomerList.vue'),
+        },
+        {
+            path: '/order',
+            name: 'Order',
+            component: () =>
+                import(/* webpackTrunkName: "Customer" */'../views/order/OrderList.vue'),
+        },
+    ],
+    mode: 'history'
 })
