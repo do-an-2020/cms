@@ -1,16 +1,19 @@
 import Vue from 'vue'
 import router from './router'
-
 import BootstrapVue from "bootstrap-vue"
-
 import App from './App'
-
 import Default from './Layout/Wrappers/baseLayout.vue';
 import Pages from './Layout/Wrappers/pagesLayout.vue';
+import axios from 'axios'
+import "./vee-validate";
+import Notifications from 'vue-notification'
+
+Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
+Vue.use(Notifications);
 
 Vue.component('default-layout', Default);
 Vue.component('userpages-layout', Pages);
