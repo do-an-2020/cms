@@ -20,6 +20,8 @@ import logo from "assets/img/reactlogo.png";
 
 let ps;
 
+const newDashboardRoute = routes.filter(route => route.invisible !== true);
+
 const switchRoutes = (
   <Switch>
     {routes.map((prop, key) => {
@@ -95,7 +97,7 @@ export default function Admin({ ...rest }) {
   return (
     <div className={classes.wrapper}>
       <Sidebar
-        routes={routes}
+        routes={newDashboardRoute}
         logoText={"Creative Tim"}
         logo={logo}
         image={image}
@@ -118,7 +120,7 @@ export default function Admin({ ...rest }) {
         ) : (
           <div className={classes.map}>{switchRoutes}</div>
         )}
-        {getRoute() ? <Footer /> : null}
+        {/* {getRoute() ? <Footer /> : null}
         <FixedPlugin
           handleImageClick={handleImageClick}
           handleColorClick={handleColorClick}
@@ -126,7 +128,7 @@ export default function Admin({ ...rest }) {
           bgImage={image}
           handleFixedClick={handleFixedClick}
           fixedClasses={fixedClasses}
-        />
+        /> */}
       </div>
     </div>
   );

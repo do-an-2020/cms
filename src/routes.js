@@ -17,9 +17,9 @@
 */
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
-import Orders from '@material-ui/icons/ShoppingCart';
-import Customers from '@material-ui/icons/People';
-import Reports from '@material-ui/icons/BarChart';
+import Orders from "@material-ui/icons/ShoppingCart";
+import Customers from "@material-ui/icons/People";
+import Reports from "@material-ui/icons/BarChart";
 import Person from "@material-ui/icons/Person";
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import BubbleChart from "@material-ui/icons/BubbleChart";
@@ -39,6 +39,7 @@ import Typography from "views/Typography/Typography.js";
 import Icons from "views/Icons/Icons.js";
 import Maps from "views/Maps/Maps.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
+import AddCustomers from "views/Customers/CustomersAdd.js";
 // import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.js";
@@ -132,14 +133,14 @@ const dashboardRoutes = [
     component: RTLPage,
     layout: "/rtl"
   },
-  // {
-  //   path: "/upgrade-to-pro",
-  //   name: "Upgrade To PRO",
-  //   rtlName: "التطور للاحترافية",
-  //   icon: Unarchive,
-  //   component: UpgradeToPro,
-  //   layout: "/admin"
-  // }
+  {
+    path: "/add",
+    name: "add",
+    // icon: Language,
+    component: AddCustomers,
+    layout: "/admin",
+    invisible: true
+  }
 ];
 
 export default dashboardRoutes;

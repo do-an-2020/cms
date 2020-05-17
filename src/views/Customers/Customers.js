@@ -1,6 +1,7 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -8,6 +9,8 @@ import Table from "components/Table/Table.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
+import AddCustomers from "views/Customers/CustomersAdd.js";
+import { Button } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
@@ -41,7 +44,9 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-export default function TableList() {
+export default function TableList(props) {
+  const { history } = props;
+
   const classes = useStyles();
   return (
     <GridContainer>
@@ -52,6 +57,18 @@ export default function TableList() {
             <p className={classes.cardCategoryWhite}>
               Here is a subtitle for this table
             </p>
+            <Button
+              onClick={() => {
+                history.push("/admin/add");
+              }}
+            >
+              Add
+            </Button>
+            {/* <Router>
+              <div className="App">
+                <Route path="/" exact component={AddCustomers} />
+              </div>
+            </Router> */}
           </CardHeader>
           <CardBody>
             <Table
